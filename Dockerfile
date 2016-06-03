@@ -11,5 +11,5 @@ mv packer /usr/local/bin/ && \
 rm -f packer_${PACKER_VERSION}_linux_amd64.zip && \
 vagrant plugin install vagrant-aws && \
 vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box && \
-yum install -y ruby ruby-dev && \
+yum install -y ruby ruby-dev gcc make && \
 gem install bundler
